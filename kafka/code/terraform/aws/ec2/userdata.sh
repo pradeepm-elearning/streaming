@@ -6,8 +6,8 @@ yum install java-11 -y
 timedatectl set-timezone Asia/Kolkata
 useradd kafkauser
 mkdir /opt/kafka
-wget -O /opt/kafka/kafka_2.13-3.9.0.tgz "https://dlcdn.apache.org/kafka/3.9.0/kafka_2.13-3.9.0.tgz"
-tar -xvzf /opt/kafka/kafka_2.13-3.9.0.tgz -C /opt/kafka/
+wget -O /opt/kafka/kafka_2.13-4.0.1.tgz "https://dlcdn.apache.org/kafka/4.0.1/kafka_2.13-4.0.1.tgz"
+tar -xvzf /opt/kafka/kafka_2.13-4.0.1.tgz -C /opt/kafka/
 chown -R kafkauser:kafkauser /opt/kafka/
 su - kafkauser
-echo "PATH=\"$PATH:/opt/kafka/kafka_2.13-3.9.0/bin\"" >> /home/kafkauser/.bashrc
+echo "PATH=\"$PATH:/opt/kafka/kafka_2.13-4.0.1/bin\"" >> /home/kafkauser/.bashrc
