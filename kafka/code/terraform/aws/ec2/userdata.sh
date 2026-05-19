@@ -2,7 +2,7 @@
 yum update -y
 yum upgrade -y
 dnf upgrade --releasever=2023.6.20250218 -y
-yum install java-11 -y
+yum install java-21 -y
 timedatectl set-timezone Asia/Kolkata
 useradd kafkauser
 mkdir /opt/kafka
